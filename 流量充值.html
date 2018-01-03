@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" style="background:none;">
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
+  <script src="./js/flexible.debug.js" charset="utf-8"></script>
+  <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <title>流量充值</title>
+</head>
+<body class="bg">
+  <div class="container">
+    <div class="title title2 font34">
+        <a class="back" href="javascript:;"></a>
+        流量充值
+    </div>
+    <div class="recharge">
+      <input class="phone-num" type="number" placeholder="输入手机号码">
+      <div class="range">
+        <a class="cur font30" href="javascript:;">100<span class="font22">MB</span></a>
+        <a class="font30" href="javascript:;">500<span class="font22">MB</span></a>
+        <a class="font30" href="javascript:;">1024<span class="font22">MB</span></a>
+      </div>
+      <script type="text/javascript">
+        $('.range').children('a').click(function() {
+          $(this).addClass('cur').siblings('a').removeClass('cur');
+        });
+      </script>
+      <div class="clearfix"></div>
+      <p class="tips">选择您需要的流量，您目前可提取流量3MB</p>
+      <a class="btn font30" href="javascript:;">立即提取</a>
+    </div>
+  </div>
+</body>
+</html>

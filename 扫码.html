@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" style="background:none;">
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
+  <script src="./js/flexible.debug.js" charset="utf-8"></script>
+  <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <title>扫码</title>
+</head>
+<body class="bg">
+  <div class="container">
+    <div class="title title2 font34">
+        <a class="back" href="javascript:;"></a>
+        扫码
+    </div>
+    <div class="QR">
+      <ul class="tab clearfix">
+        <li class="cur font26">单个</li>
+        <li class="font26">批量</li>
+      </ul>
+      <div class="QRMain on">
+          <div class="group">
+            <input class="font30" type="number" placeholder="输入手机号码">
+            <i></i>
+          </div>
+      </div>
+      <div class="QRMain">
+        <div class="group">
+          <input class="font30" type="number" placeholder="输入手机号码2">
+          <i></i>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".QR .tab li").click(function(){
+      $(".QR .tab li").eq($(this).index()).addClass("cur").siblings().removeClass('cur');
+      $(".QR .QRMain").hide().eq($(this).index()).show();
+      });
+    });
+    </script>
+  </div>
+</body>
+</html>

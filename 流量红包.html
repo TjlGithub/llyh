@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" style="background:none;">
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
+  <script src="./js/flexible.debug.js" charset="utf-8"></script>
+  <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <title>流量红包</title>
+</head>
+<body class="bg">
+  <div class="container">
+    <div class="title title2 font34">
+        <a class="back" href="javascript:;"></a>
+        流量红包
+    </div>
+    <div class="redPacket">
+      <ul class="tab clearfix">
+        <li class="cur font26">随机</li>
+        <li class="font26">定额</li>
+      </ul>
+      <div class="redPacketMain on">
+        <form action="#">
+          <div class="group">
+            <input class="font30" type="number" placeholder="0">
+            <span class="font30">总金额</span>
+            <em class="font30">MB</em>
+          </div>
+          <div class="group">
+            <input class="font30" type="number" placeholder="0">
+            <span class="font30">红包个数</span>
+            <em class="font30">个</em>
+          </div>
+          <div class="group group3">
+            <input class="font30" type="text" placeholder="恭喜发财，大吉大利！">
+          </div>
+        </form>
+      </div>
+      <div class="redPacketMain">
+        <form action="#">
+          <div class="group">
+            <input class="font30" type="number" placeholder="0">
+            <span class="font30">单个金额</span>
+            <em class="font30">MB</em>
+          </div>
+          <div class="group">
+            <input class="font30" type="number" placeholder="0">
+            <span class="font30">红包个数</span>
+            <em class="font30">个</em>
+          </div>
+          <div class="group group3">
+            <input class="font30" type="text" placeholder="恭喜发财，大吉大利！">
+          </div>
+        </form>
+      </div>
+      <p class="font30">支付流量</p>
+      <p class="font56">10000MB</p>
+      <a class="btn font30" href="javascript:;">立即提取</a>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".redPacket .tab li").click(function(){
+      $(".redPacket .tab li").eq($(this).index()).addClass("cur").siblings().removeClass('cur');
+      $(".redPacket .redPacketMain").hide().eq($(this).index()).show();
+      });
+    });
+    </script>
+  </div>
+</body>
+</html>
