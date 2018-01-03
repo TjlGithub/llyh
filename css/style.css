@@ -474,6 +474,7 @@ div{
 
 /*流量转赠*/
 .transfer{ text-align: center; position: relative;}
+.transfer input{ margin-left: -.1rem;}
 .transfer p{ color: #b3b3b3; margin-bottom: .1067rem; margin-top: 1.3333rem; position: absolute; top: 3.6rem; left: 4rem;}
 .transfer span{ color: #666; display: block; margin-bottom: .98rem;position: absolute; top: 5.75rem; left: 5rem;}
 .transfer i{ color: #8A8A8F; display: block; margin-bottom: -.5333rem;  font-style: normal; margin-top: 1.6667rem;}
@@ -528,7 +529,7 @@ div{
   white-space: nowrap;
   line-height: 1;
   color: #666;
-  margin-top: 2.8rem;
+  margin-top: 2.7rem;
   margin-left: -2rem;
 }
 .slider-container .pointer-label{
