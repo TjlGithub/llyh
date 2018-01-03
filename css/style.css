@@ -22,6 +22,15 @@ div{
 [data-dpr="3"] div{
   font-size: 36px;
 }
+.font20{
+  font-size: 10px;
+}
+[data-dpr="2"] .font20{
+  font-size: 20px;
+}
+[data-dpr="3"] .font20{
+  font-size: 40px;
+}
 .font22{
   font-size: 11px;
 }
@@ -187,7 +196,7 @@ div{
 
 /* 首页 */
 .index .title{ background: none; z-index: 999; position: relative;}
-.index .index-main{ width: 100%; height: 11.77rem; margin-top: -1.17rem; zz-index: 998;background:-webkit-linear-gradient(top,#427df4,#4246f4); position: relative;}
+.index .index-main{ width: 100%; height: 11.77rem; margin-top: -1.17rem; z-index: 998;background:-webkit-linear-gradient(top,#427df4,#4246f4); position: relative;}
 .index .index-main .flow-ball{ width: 6.19rem; height: 6.19rem; margin: 0 auto; background: url( ../images/flow-ball.png) no-repeat; background-size: 6.19rem 6.19rem;position: absolute; top:2rem; left: 1.92rem; color: #fff;}
 .index .index-main .flow-ball span{text-align: center;display: block; margin-top: .54rem}
 .index .index-main .flow-ball i{ font-style: normal; text-align: center; display: block; margin-top: .13rem;}
@@ -196,9 +205,9 @@ div{
 .index .index-main .info{ width: 9.2rem; height: 2.27rem; background: #fff; border-radius: .13rem; position: absolute; top: 8.96rem; left: .4rem;}
 .index .index-main .info ul li{ width: 3.04rem; text-align: center; position: relative; float: left; margin: .01rem}
 .index .index-main .info ul li:last-child .line{ width: 0;}
-.index .index-main .info ul li span{ color: #8A8A8F; display: block; margin-top: .22rem; margin-bottom: .2rem;}
+.index .index-main .info ul li span{ color: #8A8A8F; display: block; margin-top: .4rem; margin-bottom: .16rem;}
 .index .index-main .info ul li p{ color: #4285F4; font-weight: normal;}
-.index .index-main .info ul li p span{ color: #4285F4; margin-top: 0;}
+.index .index-main .info ul li p span{ color: #4285F4; margin-top: -.1333rem;}
 .index .index-main .info .line{ width: .03rem; height: 1.07rem; background: #f3f3f3; position: absolute; right: 0; top: .62rem;}
 .index .icons ul li{ float: left; width: 3.33rem; height: 2.12rem; border-right: .03rem solid #f3f3f3; border-bottom: .03rem solid #f3f3f3; position: relative;}
 .index .icons ul li a{ display: block; width: 3.33rem; height: 2.12rem;}
@@ -257,7 +266,7 @@ div{
 
 
 /*流量商城*/
-.mall .nav{ width: 100%; height: 1.64rem; background: #4285f4;}
+.mall .nav{ width: 100%; height: 1.64rem; background: #4285f4; margin-top: -1px;}
 .mall .nav a{ display: block;text-align: center; color: #a0c2f9; float: left; width: 1.9867rem; margin-top: .8rem;}
 .mall .nav .cur{ color: #fff;}
 .mall .banner{ width: 10rem; height: 4rem;}
@@ -273,7 +282,7 @@ div{
 .mall ul li em{ color:#4285f4; margin-top: .1867rem;}
 .search-main{ position: relative; display: none;}
 .search-main input{ width: 9.1467rem; height: 1.0667rem; background: #fff; border-radius: .1333rem; text-indent: .5333rem; border: none;}
-.search-main .btn{ width: .99rem; height: .99rem; display: block; position: absolute; top: .1rem; right: .5rem; background: url(../images/icons.png) no-repeat; background-size: 10rem 6.6667rem; background-position: -2.4733rem -4.5467rem;}
+.search-main .btn{ width: .99rem; height: .99rem; display: block; position: absolute; top: -1.5rem; right: .5rem; background: url(../images/icons.png) no-repeat; background-size: 10rem 6.6667rem; background-position: -2.4733rem -4.5467rem;}
 
 
 
@@ -314,11 +323,11 @@ div{
 .scratch{ color: #fff; text-align: center;}
 .scratch .p1{ margin-top: 2.4rem;}
 .scratch .p1 span{ display: block; line-height: 1rem;}
-#bridge { display: block; margin: 0 auto; background-image: url("../images/win.jpg"); background-size: cover; width: 100%; height: auto; width: 7.8667rem; height: 3.2533rem;}
 .scratch .win{ width: 8.9333rem; height: 4rem; background: url(../images/winbg.jpg); margin:  0 auto; background-size: 8.9333rem 4rem; padding-top: .3667rem; margin-top: 1.3333rem;}
 .scratch .tips{ text-align: center; margin-top: 1.2rem;}
 .scratch .tips span{ display: block; margin-top: .3467rem;}
 .scratch .tips a{ display: block; color: #fff; margin-top: 1.3333rem;}
+
 
 
 
@@ -332,10 +341,10 @@ div{
 .redPacket .tab li.cur{background:#4285F4; color: #fff;}
 .redPacket .redPacketMain{ display: none; width: 10rem; margin-top: .8rem; padding-left: 30px;}
 .redPacket .on{display:block;}
-.redPacket .redPacketMain input{ text-align: right; width: 9.1733rem; height: 1.44rem; border: 1px solid #ededed; background: #fff; border-radius: .1333rem; padding-right: 1.2rem;}
+.redPacket .redPacketMain input{ text-align: right; width: 9.1733rem; height: 1.44rem; lline-height: 1.44rem; border: 1px solid #ededed; background: #fff; border-radius: .1333rem; padding-right:1.6rem;}
 .redPacket .redPacketMain .group { position: relative; margin-bottom: .4rem;}
-.redPacket .redPacketMain .group span{ position: absolute; top: .46rem; left: .4rem; color: #666;}
-.redPacket .redPacketMain .group em{ position: absolute; top: .46rem; right: .8rem; color: #b3b3b3;}
+.redPacket .redPacketMain .group span{ display: block; position: absolute; height: 1.44rem; line-height: 1.44rem; top: 0; left: .4rem; color: #666;}
+.redPacket .redPacketMain .group em{ display: block; position: absolute;height: 1.44rem; line-height: 1.44rem; top: 0; right: .8267rem; color: #b3b3b3;}
 .redPacket .redPacketMain .group3 input{ text-align: left; text-indent: .4rem;}
 .redPacket p{ text-align: center;}
 .redPacket p.font30{ color: #B3B3B3; margin-top: 1.3333rem;}
@@ -582,9 +591,10 @@ div{
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbdfade', endColorstr='#ff76fabc', GradientType=0);
 }
 .theme-green .back-bar .pointer {
-  width: .3733rem;
-  height: .3733rem;
-  top: -.1333rem;
+  width: .6rem;
+  height: .6rem;
+  /* border: .4rem solid #f9f9f9; */
+  top: -.26rem;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -613,9 +623,9 @@ div{
 .QR .tab li:first-child{ border-top-left-radius: .1333rem;border-bottom-left-radius: .1333rem;}
 .QR .tab li:last-child{ border-top-right-radius: .1333rem;border-bottom-right-radius: .1333rem;}
 .QR .tab li.cur{background:#4285F4; color: #fff;}
-.QR .QRMain{ display: none; width: 10rem; margin-top: .8rem; padding-left: 30px; position: relative;}
+.QR .QRMain{ display: none; width: 10rem; margin-top: .8rem; padding-left: .4rem; position: relative;}
 .QR .on{display:block;}
-.QR .QRMain input{ text-align: left;; width: 9.1733rem; height: 1.44rem; border: 1px solid #ededed; background: #fff; text-indent: .5467rem; border-radius: .1333rem;}
+.QR .QRMain input{ text-align: left; width: 9.1733rem; height: 1.44rem; border: 1px solid #ededed; background: #fff; text-indent: .5467rem; border-radius: .1333rem;}
 .QR .QRMain i{ display: block; width: 1.2533rem; height: 1.2533rem; background: url(../images/icons2.png) no-repeat; background-size: 10rem 6.6667rem; background-position: 0 -1.1467rem ;position: absolute; top: 6px; right:.5267rem; }
 
 
