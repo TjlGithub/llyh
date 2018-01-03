@@ -398,7 +398,7 @@ div{
 .flow-detail .tab li.cur{color: #4a4a4a;}
 .flow-detail .flow-detailMain{ display: none; width: 10rem; margin-top: .8rem; padding-left: .4rem;}
 .flow-detail .on{display:block;}
-.flow-detail .flow-detailMain ul{ width: 9.2267rem; margin: 0 auto;}
+.flow-detail .flow-detailMain ul{ width: 9.2267rem;}
 .flow-detail .flow-detailMain ul li{ height: 1.9rem; width: 100%; border-bottom: .0267rem solid #e6e6e6; position: relative;}
 .flow-detail .flow-detailMain ul li p{ color: #444; position: absolute; top: .4rem; left: 0;}
 .flow-detail .flow-detailMain ul li span{ color: #b3b3b3;position: absolute; top: 1.1rem; left: 0;}
@@ -467,7 +467,7 @@ div{
 
 
 /*支付密码*/
-.paymentCode input{ width: 9.1733rem; height: 1.2533rem; line-height: 1.2533rem; background: #fff; border: 1px solid #ededed; text-indent: .5467rem; border-radius: .1333rem; margin-top: .8rem; margin-bottom: -.4rem;}
+.paymentCode input{ width: 9.1733rem; height: 1.2533rem; line-height: 1.2533rem; background: #fff; border: 1px solid #ededed; text-indent: .5467rem; border-radius: .1333rem; margin-top: .8rem; margin-bottom: -.4rem; margin-left: .4rem;}
 
 
 
@@ -528,7 +528,7 @@ div{
   white-space: nowrap;
   line-height: 1;
   color: #666;
-  margin-top: 2.86rem;
+  margin-top: 2.8rem;
   margin-left: -2rem;
 }
 .slider-container .pointer-label{
