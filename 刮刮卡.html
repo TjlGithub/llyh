@@ -115,7 +115,7 @@
         			//初始化所有数据并且随机产生奖品
         			var initialize  = function () {
         				//剩余刮卡次数
-        				$('.num1').html(4-t);
+        				$('.num1').html(6-t);
         				//随机数
         				function getRandomNum(lbound, ubound) {
         					return (Math.floor(Math.random() * (ubound - lbound)) + lbound);
@@ -138,7 +138,7 @@
         					ok.style.display = "block";
         					//点击领取奖品
         					ok.onclick = function () {
-        						window.location.href="prize.html"
+        						window.location.href="刮刮卡.html"
         					};
         				}else{
         					document.getElementById("prompt").innerHTML="很遗憾，未中奖！"
@@ -241,7 +241,6 @@
         					 ctx.arc(x, y, fontem*1.2, 0, Math.PI * 2,true);
 
         					 //下面3行代码是为了修复部分手机浏览器不支持destination-out
-        					 //我也不是很清楚这样做的原理是什么
         					 c1.style.display = 'none';
         					 c1.offsetHeight;
         					 c1.style.display = 'inherit';
