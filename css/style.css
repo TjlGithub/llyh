@@ -182,7 +182,7 @@ div{
 
 /* 登录 */
 .login{ margin-top: .8rem; position: relative;}
-.login input{ width: 9.15rem; height: 1.23rem; line-height: 1.23rem; border: 1px solid #ededed; border-radius: 4px; text-indent: .51rem; line-height: 1.23rem; margin-left: .4rem; margin-bottom: .4rem; }
+.login input{ width: 9.15rem; height: 1.23rem; line-height: .8rem; border: 1px solid #ededed; border-radius: 4px; text-indent: .51rem; line-height: 1.23rem; margin-left: .4rem; margin-bottom: .4rem; }
 .login .yzm{ width: 2.2rem; height: 1.23rem; line-height: 1.23rem; display: block; text-align: center; position: absolute; top:1.6rem; right: .85rem; color: #4285f4;}
 .login .btn{ display: block; width: 9.2rem; height: 1.29rem; line-height: 1.29rem; margin: 0 auto; text-align: center; color: #fff; background: #4285f4; border-radius: .13rem; margin-top: .4rem;}
 .login p{ text-align: center; margin-top: .77rem;}
