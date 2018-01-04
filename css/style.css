@@ -227,9 +227,9 @@ div{
 .index .block{ width: 100%; height: .4rem; background: #f9f9f9;}
 .index .index-bottom{ width: 100%; height: 1.55rem; background: #fff; border-top: .03rem solid #ebebeb; margin-bottom: .08rem;}
 .index .index-bottom ul{ margin-left: .0133rem;}
-.index .index-bottom ul li{ float: left; width: 2.4933rem; text-align: center; position: relative;}
-.index .index-bottom ul li a{ display: block;}
-.index .index-bottom ul li i{ display: block; width: .52rem; height: .56rem; background: url(../images/icons.png) no-repeat; background-size: 10rem 6.67rem; position: absolute; top: .21rem; left: 1rem;}
+.index .index-bottom ul li{ float: left;  position: relative;}
+.index .index-bottom ul li a{ display: block; width: 2.4933rem; text-align: center; height: 1.55rem;}
+.index .index-bottom ul li a i{ display: block; width: .52rem; height: .56rem; background: url(../images/icons.png) no-repeat; background-size: 10rem 6.67rem; position: absolute; top: .21rem; left: 1rem;}
 .index .index-bottom ul .index-b-icon1 i{ background-position-x: 0 ; background-position-y: -2.12rem;}
 .index .index-bottom ul .index-b-icon2 i{ background-position-x: -.52rem; background-position-y: -2.12rem;}
 .index .index-bottom ul .index-b-icon3 i{ background-position-x: -1.56rem; background-position-y: -2.12rem;}
