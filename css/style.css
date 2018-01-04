@@ -233,7 +233,7 @@ div{
 .index .index-bottom ul li a span{ display: block; width: 3.33rem; text-align: center; color: #8a8a8f; margin-top: 1.04rem;}
 .index .index-bottom ul li .cur span{ color: #4285f4;}
 
-.bottom-fixed{ position: absolute; bottom: 0;}
+.bottom-fixed{ position: absolute; bottom: 0; left: 0;}
 
 
 /*赚流量*/
