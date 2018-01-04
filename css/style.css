@@ -215,10 +215,11 @@ div{
 .index .icons ul li a{ display: block; width: 3.33rem; height: 2.12rem;}
 .index .icons ul li:nth-child(3n+3){ border-right: 0;}
 .index .icons ul li i{ display: block; width: .59rem; height: .56rem; background: url(../images/icons.png) no-repeat; background-size: 10rem 6.67rem; position: absolute; top: .44rem; left: 1.36rem;}
-.index .icons ul li .icon1{ background-position: 0 -1.47rem;}
-.index .icons ul li .icon2{ background-position: -.59rem -1.47rem;}
-.index .icons ul li .icon3{ background-position: -1.18rem -1.47rem;}
-.index .icons ul li .icon4{ background-position: -1.77rem -1.47rem;}
+.index .icons ul li .icon1{ background-position: -3.52rem -1.47rem;}
+.index .icons ul li .icon2{ background-position: -4.1067rem -1.47rem;}
+
+.index .icons ul li .icon3{ background-position: 0 -1.47rem;}
+.index .icons ul li .icon4{ background-position: -4.6667rem -1.47rem;}
 .index .icons ul li .icon5{ background-position: -2.36rem -1.47rem;}
 .index .icons ul li .icon6{ background-position: -2.95rem -1.47rem;}
 .index .icons ul li span{ display: block; width: 3.33rem; text-align: center; position: absolute; top: 1.39rem; color: #8A8A8F;}
@@ -228,9 +229,14 @@ div{
 .index .index-bottom ul{ margin-left: .0133rem;}
 .index .index-bottom ul li{ float: left; width: 2.4933rem; text-align: center; position: relative;}
 .index .index-bottom ul li i{ display: block; width: .52rem; height: .56rem; background: url(../images/icons.png) no-repeat; background-size: 10rem 6.67rem; position: absolute; top: .21rem; left: 1rem;}
-.index .index-bottom ul li .index-b-icon1{ background-position: 0 -2.12rem;}
-.index .index-bottom ul li .index-b-icon2{ background-position: -.52rem -2.12rem;}
-.index .index-bottom ul li .index-b-icon3{ background-position: -1.04rem -2.12rem;}
+.index .index-bottom ul .index-b-icon1 i{ background-position-x: 0 ; background-position-y: -2.12rem;}
+.index .index-bottom ul .index-b-icon2 i{ background-position-x: -.52rem; background-position-y: -2.12rem;}
+.index .index-bottom ul .index-b-icon3 i{ background-position-x: -1.56rem; background-position-y: -2.12rem;}
+.index .index-bottom ul .index-b-icon4 i{ background-position-x: -1.04rem; background-position-y: -2.12rem;}
+.index .index-bottom ul li.index-b-icon1 .cur i{ background-position-x: -2.08rem; background-position-y: -2.12rem;}
+.index .index-bottom ul li.index-b-icon2 .cur i{ background-position-x: -2.6rem; background-position-y: -2.12rem;}
+.index .index-bottom ul li.index-b-icon3 .cur i{ background-position-x: -3.64rem; background-position-y: -2.12rem;}
+.index .index-bottom ul li.index-b-icon4 .cur i{ background-position-x: -3.12rem; background-position-y: -2.12rem;}
 .index .index-bottom ul li a span{ display: block; width: 2.4933rem; text-align: center; color: #8a8a8f; margin-top: 1.04rem;}
 .index .index-bottom ul li .cur span{ color: #4285f4;}
 
@@ -349,8 +355,8 @@ div{
 .redPacket .redPacketMain .group span{ display: block; position: absolute; height: 1.44rem; line-height: 1.44rem; top: 0; left: .4rem; color: #666;}
 .redPacket .redPacketMain .group em{ display: block; position: absolute;height: 1.44rem; line-height: 1.44rem; top: 0; right: .8267rem; color: #b3b3b3;}
 .redPacket .redPacketMain .group3 input{ text-align: left; text-indent: .4rem;}
-.redPacket p{ text-align: center;}
-.redPacket p.font30{ color: #B3B3B3; margin-top: 1.3333rem;}
+.redPacket p{ text-align: center; color: #B3B3B3;}
+.redPacket p.font30{ color: #999; margin-top: 1.3333rem;}
 .redPacket p.font56{ color: #666; font-weight: bold; margin-top:.2rem}
 
 
@@ -476,11 +482,11 @@ div{
 /*流量转赠*/
 .transfer{ text-align: center; position: relative;}
 .transfer input{ margin-left: -.1rem;}
-.transfer p{ color: #b3b3b3; margin-bottom: .1067rem; margin-top: 1.3333rem; position: absolute; top: 3.6rem; left: 4rem;}
-.transfer span{ color: #666; display: block; margin-bottom: .98rem;position: absolute; top: 5.75rem; left: 5rem;}
+.transfer p{ color: #b3b3b3; margin-bottom: .1067rem; margin-top: 1.3333rem; }
+.transfer span{ color: #666; display: block; margin-bottom: .98rem;position: absolute; top: 4.87rem; left: 5rem;}
 .transfer i{ color: #8A8A8F; display: block; margin-bottom: -.5333rem;  font-style: normal; margin-top: 1.6667rem;}
 .transfer .progress{ width: 9.2rem; margin-top: 1.3333rem;}
-
+.transfer .block{ width: 9.1733rem; height: 1.2533rem; border: 1px solid #f9f9f9;  margin-top: .8rem; margin-bottom: -.4rem; margin-left: .4rem;}
 
 
 
@@ -627,7 +633,8 @@ div{
 .QR .tab li:first-child{ border-top-left-radius: .1333rem;border-bottom-left-radius: .1333rem;}
 .QR .tab li:last-child{ border-top-right-radius: .1333rem;border-bottom-right-radius: .1333rem;}
 .QR .tab li.cur{background:#4285F4; color: #fff;}
-.QR .QRMain{ display: none; width: 10rem; margin-top: .8rem; padding-left: .4rem; position: relative;}
+.QR .QRMain{ display: none; width: 10rem; margin-top: .8rem; padding-left: .4rem;}
+.QR .QRMain .group{ position: relative; margin-top: .4rem;}
 .QR .on{display:block;}
 .QR .QRMain input{ text-align: left; width: 9.1733rem; height: 1.44rem; border: 1px solid #ededed; background: #fff; text-indent: .5467rem; border-radius: .1333rem;}
 .QR .QRMain i{ display: block; width: 1.2533rem; height: 1.2533rem; background: url(../images/icons2.png) no-repeat; background-size: 10rem 6.6667rem; background-position: 0 -1.1467rem ;position: absolute; top: 6px; right:.5267rem; }
