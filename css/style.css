@@ -299,21 +299,26 @@ div{
 
 
 /*流量充值*/
-.recharge .phone-num{ width: 9.173333rem; height: 1.253333rem; background: #fff; border-radius: 10px; border: 1px solid #ededed; text-indent: .53rem; color: #8a8a8f; margin: .813333rem 0 0 .413333rem; }
+.recharge .phone-num{ width: 9.173333rem; height: 1.253333rem; background: #fff; border-radius: .1333rem; border: 1px solid #ededed; text-indent: .53rem; color: #8a8a8f; margin: .813333rem 0 0 .413333rem; }
 .recharge .range{ padding-left: .2rem;}
 .recharge .range a{ display: block; float: left; width: 2.773333rem;  height: 1.5733rem; background: #fff; border: 1px solid #ededed; text-align: center; line-height: 1.1733rem; border-radius: .1333rem; color: #4285F4; margin: .4rem .2rem;}
 .recharge .range a span{ color: #B3B3B3; display: block; line-height: 0rem;}
 .recharge .range .cur{ background: #4285F4; border: 1px solid #4285F4; color: #fff;}
 .recharge .range .cur span{ color: #fff;}
 .recharge .tips{ text-align: center; color: #8A8A8F; margin-top: .4rem}
+.recharge .check{ width: 9.173333rem; height: 1.253333rem; line-height:1.253333rem;  border-radius: .1333rem; border: 1px solid #ededed; text-indent: .4rem; background: #fff; margin-left:.4rem; border: 1px solid #ededed; color: #8a8a8f;}
+.recharge .mask{ width: 100%; height: 100vh; background: #000; position: absolute; top: 0;  left: 0; z-index: 998; opacity: .8; display: none;}
+.recharge .checkMain{ z-index: 999;width: 8rem; margin: 0 auto; background: #fff; position: absolute; top: 3.65rem; margin-left:1rem; border: 1px solid #ededed;display: none;}
+.recharge .checkMain ul li{ width: 90%; margin-left: 5%; height: 1.6rem; line-height: 1.6rem; text-indent: 1.0667rem; color: #666; border-bottom: 1px solid #ededed; position: relative;}
+.recharge .checkMain ul li i{ display: block; width: .44rem; height: .36rem; background: url(../images/icons.png) no-repeat; background-size: 10rem 6.67rem; position: absolute; top: .59rem; left: .3rem; background-position: -4.76rem 0;}
 
 
 
 
 /*签到*/
 .signIn{ margin-bottom: .4rem;}
-.signIn .top{ width: 10rem; height: 4.2667rem; background: #4285F4;}
-.signIn .top img{ width: 10rem; height: 1.5467rem; margin-top: 1.0133rem;}
+.signIn .top{ width: 10rem; height: 2.6rem; background: #4285F4;}
+.signIn .top img{ width: 10rem; height: 1.5467rem; margin-top: .3rem;}
 .signIn .top span{ color: #fff; display: inline-block; margin-left: 1.1333rem; margin-right: 1.3333rem;}
 .signIn .top span:last-child{ margin-right: 0;}
 .signIn .date ul{ width: 8.7rem; height: 5.5rem; margin: 0 auto; }
@@ -326,7 +331,7 @@ div{
 .signIn .date ul.day li{ float: left;width: 1.2267rem; height: 1.0933rem; line-height: 1.0933rem; text-align: center; color: #b3b3b3;}
 .signIn .tips{ text-align: center; margin-top: .6rem;color: #b3b3b3;}
 .signIn .tips a{ display: block; color: #fff; margin-top: .4rem; color: #8A8A8F;}
-
+.signIn .btn{ margin-top: 1rem;}
 
 
 

@@ -10,13 +10,13 @@
   <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
   <script src="./js/flexible.debug.js" charset="utf-8"></script>
   <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
-  <title>扫码</title>
+  <title>扫流量卡二维码</title>
 </head>
 <body class="bg">
   <div class="container">
     <div class="title title2 font34">
         <a class="back" href="javascript:;" onclick="javascript :history.back(-1);"></a>
-        扫码
+        扫流量卡二维码
     </div>
     <div class="QR">
       <ul class="tab clearfix">
@@ -25,7 +25,7 @@
       </ul>
       <div class="QRMain on">
           <div class="group">
-            <input class="font30" type="number" placeholder="输入券号">
+            <input class="font30" type="number" placeholder="输入卡号">
             <a href="扫码页面.html"><i></i></a>
           </div>
           <a class="btn font32" href="javascript:;">提交</a>
@@ -33,15 +33,15 @@
       <div class="QRMain">
         <div class="QRMain2">
           <div class="group">
-            <input class="font30" type="number" placeholder="输入券号">
+            <input class="font30" type="number" placeholder="输入卡号">
             <a href="扫码页面.html"><i></i></a>
           </div>
           <div class="group">
-            <input class="font30" type="number" placeholder="输入券号">
+            <input class="font30" type="number" placeholder="输入卡号">
             <a href="扫码页面.html"><i></i></a>
           </div>
           <div class="group">
-            <input class="font30" type="number" placeholder="输入券号">
+            <input class="font30" type="number" placeholder="输入卡号">
             <a href="扫码页面.html"><i></i></a>
           </div>
         </div>
@@ -50,7 +50,7 @@
           $('.add').click(function() {
             var htmladd="";
                 htmladd +='<div class="group">';
-                htmladd +='<input class="font30" type="number" placeholder="输入券号">';
+                htmladd +='<input class="font30" type="number" placeholder="输入卡号">';
                 htmladd +='<a href="扫码页面.html"><i></i></a>';
                 htmladd +='</div>';
             $('.QRMain2').append(htmladd);

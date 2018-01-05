@@ -26,12 +26,12 @@
       <div class="redPacketMain on">
         <form action="#">
           <div class="group">
-            <input class="font30" type="tel" placeholder="0" name="add1" id="add1" onkeypress="compute2()" onblur="compute2()" onkeyup="compute2()">
+            <input class="font30" type="tel" value="10" name="add1" id="add1" onkeypress="compute2()" onblur="compute2()" onkeyup="compute2()">
             <span class="font30">总流量</span>
             <em class="font30">MB</em>
           </div>
           <div class="group">
-            <input class="font30" type="tel" placeholder="0" id="add0" onkeypress="compute2()" onblur="compute2()" onkeyup="compute2()">
+            <input class="font30" type="tel" value="1" name="add2" id="add2" onkeypress="compute2()" onblur="compute2()" onkeyup="compute2()">
             <span class="font30">红包个数</span>
             <em class="font30">个</em>
           </div>
@@ -39,8 +39,8 @@
             <input class="font30" type="text" placeholder="恭喜发财，大吉大利！">
           </div>
         </form>
-        <p class="font56" name="add" id="add2">0MB</p>
-        <script type="text/javascript">
+        <p class="font56" name="add" id="add6">10MB</p>
+        <!-- <script type="text/javascript">
            function compute2(){
              var o4 = document.getElementById("add1");
              var o5 = document.getElementById("add2");
@@ -48,18 +48,36 @@
              o5.innerHTML = o4.value+"MB";
              }
            }
+        </script> -->
+        <script>
+          function filtervalue(o){
+          if(!o.value.match(/^[\+\-]?\d*?\.?\d*?$/))
+          o.value=o.t_value;
+          else
+          o.t_value=o.value;
+          if(o.value.match(/^(?:[\+\-]?\d+(?:\.\d+)?)?$/))
+          o.o_value=o.value
+          }
+          function compute2(){
+          o4 = document.getElementById("add1");
+          o5 = document.getElementById("add2");
+          o6 = document.getElementById("add6");
+          filtervalue(o4);
+          filtervalue(o5);
+          o6.innerHTML = o4.value*o5.value+"MB";
+          }
         </script>
       </div>
 
       <div class="redPacketMain">
         <form action="#">
           <div class="group">
-            <input class="font30" type="tel"  onkeypress="compute()" onblur="compute()" onkeyup="compute()" value="" name="add1" id="add3" o_value t_value placeholder="0">
+            <input class="font30" type="tel"  onkeypress="compute()" onblur="compute()" onkeyup="compute()" value="10" name="add1" id="add3" o_value t_value>
             <span class="font30">单份流量</span>
             <em class="font30">MB</em>
           </div>
           <div class="group">
-            <input class="font30" type="tel"  onkeypress="compute()" onblur="compute()" onkeyup="compute()" value="" name="add2" id="add4" o_value t_value placeholder="0">
+            <input class="font30" type="tel"  onkeypress="compute()" onblur="compute()" onkeyup="compute()" value="1" name="add2" id="add4" o_value t_value placeholder="0">
             <span class="font30">红包个数</span>
             <em class="font30">个</em>
           </div>
@@ -85,7 +103,7 @@
           o3.innerHTML = o1.value*o2.value+"MB";
           }
         </script>
-        <p class="font56" name="add" id="add5">0MB</p>
+        <p class="font56" name="add" id="add5">10MB</p>
       </div>
       <p class="font28">当前流量余额：20000MB</p>
       <p class="font30">支付流量</p>
