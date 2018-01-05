@@ -435,25 +435,26 @@ div{
 
 
 /*流量卡券*/
-.coupons .card{ width: 9.2rem; height: 3.2rem; border-radius: .1333rem; margin: .4rem auto 0 auto; position: relative; z-index: 998;}
+.coupons .card{ width: 9.2rem; height: 2.6rem; border-radius: .1333rem; margin: .28rem auto 0 auto; position: relative; z-index: 998;}
 .coupons .card1{ background: #F23329; color: #fff;}
 .coupons .card2{ background: #fdd631; color: #fff;}
 .coupons .card3{ background: #41c659; color: #fff;}
 .coupons .card4{ background: #669bf4; color: #fff;}
+.coupons .card5{ background: #f7524a; color: #fff;}
 .coupons .card span{ width: .2667rem; height: .2667rem; background: #fff; border-radius: 50%; z-index: 999; position: absolute;}
 .coupons .card .point1{ top: -.1333rem; left: 6.0533rem;}
 .coupons .card .point2{ bottom: -.1333rem; left: 6.0533rem;}
-.coupons .card .point3{ right: -.1333rem; top: .2667rem;}
-.coupons .card .point4{ right: -.1333rem; top: .6667rem;}
-.coupons .card .point5{ right: -.1333rem; top: 1.0667rem;}
-.coupons .card .point6{ right: -.1333rem; top: 1.4667rem;}
-.coupons .card .point7{ right: -.1333rem; top: 1.8667rem;}
-.coupons .card .point8{ right: -.1333rem; top: 2.2667rem;}
-.coupons .card .point9{ right: -.1333rem; top: 2.6667rem;}
+.coupons .card .point3{ right: -.1333rem; top: .3667rem;}
+.coupons .card .point4{ right: -.1333rem; top: .7667rem;}
+.coupons .card .point5{ right: -.1333rem; top: 1.1667rem;}
+.coupons .card .point6{ right: -.1333rem; top: 1.5667rem;}
+.coupons .card .point7{ right: -.1333rem; top: 1.9667rem;}
+/* .coupons .card .point8{ right: -.1333rem; top: 2.2667rem;}
+.coupons .card .point9{ right: -.1333rem; top: 2.6667rem;} */
 .coupons .card .line{ width: .0267rem; height: 2.16rem;  background: #fff; position: absolute; top: .52rem; right: 3rem;}
-.coupons .card strong{position: absolute; top: .7rem; left: .8267rem}
-.coupons .card i{ font-style: normal; position: absolute; top: 1.8333rem; left: .8267rem}
-.coupons .card em{ display: block; position: absolute; top: 1.0667rem; right: 1.0667rem;}
+.coupons .card strong{position: absolute; top: .46rem; left: .8267rem}
+.coupons .card i{ font-style: normal; position: absolute; top: 1.6333rem; left: .8267rem}
+.coupons .card em{ display: block; position: absolute; top: .8rem; right: 1.0667rem;}
 
 
 
@@ -486,10 +487,10 @@ div{
 
 
 /*流量转赠*/
-.transfer{ text-align: center; position: relative;}
+.transfer{ text-align: center; position: relative;padding-top: 1.8rem;}
 .transfer input{ margin-left: -.1rem;}
 .transfer p{ color: #b3b3b3; margin-bottom: .1067rem; margin-top: 1.3333rem; }
-.transfer span{ color: #666; display: block; margin-bottom: .98rem;position: absolute; top: 4.94rem; left: 5rem;}
+.transfer span{ color: #666; display: block; margin-bottom: .98rem;position: absolute; top: 1.8rem; left: 5rem;}
 .transfer i{ color: #8A8A8F; display: block; margin-bottom: -.5333rem;  font-style: normal; margin-top: 1.6667rem;}
 .transfer .progress{ width: 9.2rem; margin-top: 1.3333rem;}
 .transfer .block{ width: 9.1733rem; height: 1.2533rem; border: 1px solid #f9f9f9;  margin-top: .8rem; margin-bottom: -.4rem; margin-left: .4rem;}
@@ -542,7 +543,7 @@ div{
   white-space: nowrap;
   line-height: 1;
   color: #666;
-  margin-top: 2.73rem;
+  margin-top: -3rem;
   margin-left: -2rem;
 }
 .slider-container .pointer-label{
@@ -662,7 +663,7 @@ div{
 
 /*流量交易所*/
 .exchange{}
-.exchange .tab{ width: 10rem; margin:0;}
+.exchange .tab{ width: 10rem; margin:0; }
 .exchange .tab li{float:left; width:5rem; height:1.1467rem; line-height: 1.1467rem; background:#fff; color:#4285F4; border-bottom: 1px solid #f2f2f2; text-align:center; cursor:pointer;}
 .exchange .tab li span{ width: 1.8933rem; height:1.1067rem; display: block; margin: 0 auto; border-bottom: .0267rem solid #fff; text-align: center;}
 .exchange .tab li.cur span{ border-bottom: .0267rem solid #4285F4;}
@@ -674,8 +675,8 @@ div{
 
 
 
-
-
+/*流量转赠分享*/
+.blow-share img{ width: 6rem; height: 6.2267rem;}
 
 
 
