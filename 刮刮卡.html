@@ -86,7 +86,7 @@
         刮刮卡
     </div>
     <div class="scratch">
-      <p class="font72 p1">流量刮刮卡<span class="font44">赢100GB流量大奖</span></p>
+      <p class="font72 p1">流量刮刮卡<span class="font44">赢5000MB流量大奖</span></p>
       <div class="win">
 
 
@@ -94,7 +94,8 @@
         <div class="ggl" id="top">
         			<div class="info" id="prize">
         				<span class="font38" id="prompt"></span>
-        				<span class="btn font38" id="ok">点击领取奖品</span>
+        				<!-- <span class="btn font38" id="ok">点击领取奖品</span> -->
+        				<span class="btn font38" id="ok">恭喜您获得20MB流量</span>
         				<span class="btn font38" id="no">点击再来一次</span>
         			</div>
         			<canvas id="c1" class="canvas"></canvas>
@@ -190,7 +191,7 @@
         				ctx.font = "Bold 30px Arial";
         						ctx.textAlign = "center";
         						ctx.fillStyle = "#999999";
-        						ctx.fillText("立即刮奖",c1.width/2,50);
+        						ctx.fillText("立即刮奖",c1.width/2,75);
 
         				//把这个属性设为这个就可以做出圆形橡皮擦的效果
         				//有些老的手机自带浏览器不支持destination-out,下面的代码中有修复的方法
@@ -215,8 +216,9 @@
         				}
 
         				//当被刮开的区域等于一半时，则可以开始处理结果
-        				if(j>=a.data.length/8){
+        				if(j>=a.data.length/16){
         					isOk = 1;
+                  document.getElementById("c1").style.display="none";
         				}
         				ismousedown=false;
         			}
@@ -259,21 +261,22 @@
 
         			//没有中奖再来一次
         			$("#no").click(function() {
-        				if(t>3){
-        					//因该弹出遮罩层提示您的次数已经用完了
-        					$('.pop1').show();
-        					$('.pop1 img').click(function(){
-        						$('.pop1').hide();
-        					})
-        				}else{
+        				// if(t>3){
+        				// 	//因该弹出遮罩层提示您的次数已经用完了
+        				// 	$('.pop1').show();
+        				// 	$('.pop1 img').click(function(){
+        				// 		$('.pop1').hide();
+        				// 	})
+        				// }else{
         					t++;
-        					//初始化按钮
+        				// 	//初始化按钮
+                  document.getElementById("c1").style.display="block";
         					document.getElementById("no").style.display = "none";
         					document.getElementById("ok").style.display = "none";
         					window.onload();
         					initCanvas();
 
-        				}
+        				// }
         			});
 
 

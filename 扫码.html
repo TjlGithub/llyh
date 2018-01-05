@@ -26,23 +26,36 @@
       <div class="QRMain on">
           <div class="group">
             <input class="font30" type="number" placeholder="输入券号">
-            <i></i>
+            <a href="扫码页面.html"><i></i></a>
           </div>
           <a class="btn font32" href="javascript:;">提交</a>
       </div>
       <div class="QRMain">
-        <div class="group">
-          <input class="font30" type="number" placeholder="输入券号">
-          <i></i>
+        <div class="QRMain2">
+          <div class="group">
+            <input class="font30" type="number" placeholder="输入券号">
+            <a href="扫码页面.html"><i></i></a>
+          </div>
+          <div class="group">
+            <input class="font30" type="number" placeholder="输入券号">
+            <a href="扫码页面.html"><i></i></a>
+          </div>
+          <div class="group">
+            <input class="font30" type="number" placeholder="输入券号">
+            <a href="扫码页面.html"><i></i></a>
+          </div>
         </div>
-        <div class="group">
-          <input class="font30" type="number" placeholder="输入券号">
-          <i></i>
-        </div>
-        <div class="group">
-          <input class="font30" type="number" placeholder="输入券号">
-          <i></i>
-        </div>
+        <a class="add" href="javascript:;"></a>
+        <script type="text/javascript">
+          $('.add').click(function() {
+            var htmladd="";
+                htmladd +='<div class="group">';
+                htmladd +='<input class="font30" type="number" placeholder="输入券号">';
+                htmladd +='<a href="扫码页面.html"><i></i></a>';
+                htmladd +='</div>';
+            $('.QRMain2').append(htmladd);
+          });
+        </script>
         <a class="btn font32" href="javascript:;">提交</a>
       </div>
     </div>
