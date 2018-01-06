@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
   <script src="./js/flexible.debug.js" charset="utf-8"></script>
+  <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
   <title>流量银行</title>
 </head>
 <body style="overflow-y:hidden;">
@@ -21,6 +22,24 @@
         <a class="index-icon-tl" href="流量充值.html"></a>
         <a class="index-icon-tr" href="扫码.html"></a>
         <div class="flow-ball">
+          <div class="container">
+            <!-- <div class="wave-one" style="transform: rotate(722.2deg);"></div> -->
+            <div class="wave-two" style="transform: rotate(811.25deg);"></div>
+            <div class="wave-three" style="transform: rotate(-884.15deg);"></div>
+          </div>
+          <script>
+            // var waveOneinc = 0;
+            var waveTwoinc = 25;
+            var waveThreeinc = 35;
+            setInterval(function(){
+              // $('.wave-one').css('transform', 'rotate('+waveOneinc+'deg)');
+              // waveOneinc+=1.15;
+              waveTwoinc+=1.25;
+              waveThreeinc+=1.35;
+              $('.wave-two').css('transform', 'rotate('+waveTwoinc+'deg)');
+             $('.wave-three').css('transform', 'rotate(-'+waveThreeinc+'deg)');
+           }, 30);
+          </script>
           <span class="font32">当前总流量</span>
           <i class="font56">2000MB</i>
         </div>
@@ -79,7 +98,7 @@
             </a>
           </li>
           <li>
-            <a href="./images/temp/特权.html">
+            <a href="兑换特权.html">
               <i class="icon6"></i>
               <span class="font24">特权</span>
             </a>

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/flexible_css.debug.js" charset="utf-8"></script>
   <script src="./js/flexible.debug.js" charset="utf-8"></script>
+  <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
   <title>签到领流量</title>
 </head>
 <body class="bg">
@@ -145,8 +146,33 @@
       <a class="btn font32" href="javascript:;">今日签到</a>
       <div class="tips">
         <span class="font26">每天登陆签到即可获得随机流量</span>
-        <a class="font26" href="javascript:;">- 活动规则 -</a>
+        <a class="font26 rule" href="javascript:;">- 活动规则 -</a>
       </div>
+      <div class="mask"></div>
+      <div class="popup">
+        <a class="close font34" href="javascript:;"><i></i></a>
+        <p class="font32">活动规则</p>
+        <span class="font28">
+          ​1.新进中央委员会的委员、候补委员和省部级主要领导干部学习贯彻习近平新时代中国特色。<br />
+          2.中共中央总书记、国家主席、中央军委主席习近平在开班式上发表重要讲话强调，<br />
+          3.中央委员会成员和省部级主要领导干部至关重要，必须提高政治站位、树立历史眼光<br />
+          4.坚持问题导向，从历史和现实相贯通、国际和国内相关联、理论和实际相结合的宽广视角<br />
+        </span>
+      </div>
+      <script type="text/javascript">
+        $('.rule').click(function() {
+          $('.mask').css('display', 'block');
+          $('.popup').css('display', 'block');
+        });
+        $('.mask').click(function() {
+          $('.mask').css('display', 'none');
+          $('.popup').css('display', 'none');
+        });
+        $('.close').click(function() {
+          $('.mask').css('display', 'none');
+          $('.popup').css('display', 'none');
+        });
+      </script>
     </div>
   </div>
 </body>
